@@ -1,0 +1,263 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+a:link,
+a:visited{
+  text-decoration: none;
+  color: #333;
+}
+
+header {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.top-image {
+  width: 100%;
+}
+.top-image2 img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.navi {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  color: rgb(68, 67, 67);
+  list-style-type: none;
+  justify-content: flex-end;
+  /* justify-content: space-around; */
+  /* padding-left: 0; */
+}
+
+.navi li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+  width: 100px;
+}
+
+.current {
+  font-weight: bold;
+}
+
+/* コンテンツ */
+.list {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap-reverse;
+}
+
+/* <div> リスト全体1列の場合*/
+.list-item {
+  flex:1 2 30%;
+  /* width:100%; */
+}
+/* <section>各コンテンツごと */
+.list-item-img{
+  text-align: center;
+}
+
+/* <p>各写真ごと */
+.list-item-img img{
+  max-width: 100%;
+  /* max-width: 220px; */
+}
+
+.menu{
+  padding-left: 10px;
+  color:rgb(68, 67, 67)
+}
+
+.list-item-txt{
+  padding: 0 10px;
+}
+
+.title{
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 29px;
+  color: rgb(46, 46, 46);
+}
+.divider{
+ border: none;
+ border-top: 1px solid #CFD8DC;
+ /* margin: 28px auto 0; */
+ width: 100px;
+}
+
+/* works */
+.demo-container{
+  max-width: 960px;
+  margin:0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 20px;
+}
+.demo-item{
+  /* 画像をレスポンシブ対応にする */
+  width: 100%;
+  /* flex-grow: 1; */
+  flex-basis: 50%;
+  /* margin:0 auto;
+  max-width: 384px; */
+  /* max-width: 100%; */
+}
+/* <div> リスト全体1列の場合*/
+.demo-item-img{
+  margin:auto;
+  max-width: 384px;
+  /* max-width: 100%; */
+  text-align: center;
+}
+ .demo-item-img img {
+  width:100%;
+}
+@media (min-width: 376px) {
+  .demo-item {
+    width: calc(100%/2);
+  }
+  /* 2列の時、100％のサイズだと重なるため */
+/* 1401 */
+  .demo-item-img img{
+    width: 90%;
+  }
+}
+@media (min-width:640px) {
+  .demo-item {
+   width: calc(100%/3);
+  }
+  .container{
+    display:flex;
+  }
+  /* .left.margintop{
+    margin-top: 10px;
+  }
+  .right.margintop{
+    margin-top: 30px;
+  }
+  .right{
+    padding: 0 30px;
+  }
+  .rightmargintop{
+    margin-top: -10px;
+  } */
+}
+@media (min-width:769px) {
+  .demo-item{
+   width: calc(100%/4);
+   }
+}
+
+.pagetitle{
+  font-size:1.5rem;
+  text-align: center;
+}
+.about_list{
+  padding-left: 20px;
+}
+
+/* 説明文 */
+.ex_title.h5{
+  /* max-width:960px; */
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+.explanation{
+  padding:0 20px;
+  
+}
+
+/* about */
+.container{
+  max-width: 960px;
+  margin:0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 20px;
+}
+
+.portfolio-img{
+  margin:0 auto;
+  max-width: 384px;
+  /* max-width: 100%; */
+}
+/* <div> リスト全体1列の場合*/
+ .portfolio-img img {
+  width:100%;
+}
+
+@media (min-width: 376px) {
+  .portfolio-img {
+    width: calc(100%/2);
+  } 
+  /* 2列の時、100％のサイズだと重なるため */
+  .portopolio-img img{
+    width: 90%;
+  }
+}
+
+/* メディアクエリ */
+@media (min-width: 376px) {
+  .list-item {
+    width: calc(100%/2);
+  }
+  /* 2列の時、100％のサイズだと重なるため */
+  .list-item-img img{
+    width: 90%;
+  }
+}
+@media (min-width:640px) {
+  .list-item {
+   width: calc(100%/3);
+  }
+  .container{
+    display:flex;
+  }
+  .left.margintop{
+    margin-top: 10px;
+  }
+  .right.margintop{
+    margin-top: 30px;
+  }
+  .right{
+    padding: 0 30px;
+  }
+  .rightmargintop2{
+    margin-top: -10px;
+  }
+}
+@media (min-width:769px) {
+  .list-item {
+   width: calc(100%/4);
+   }
+  .year{
+    font-size: 9rem;
+  }
+}
+
+footer {
+  background-color: rgb(255, 255, 255);
+  padding: 70px 0 30px;
+  /* margin-top: 20px; */
+}
+
+.copyright {
+  text-align: center;
+  color: rgb(68, 67, 67);
+  font-size: 1.2rem;
+}
+
